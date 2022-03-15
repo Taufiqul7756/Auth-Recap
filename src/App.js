@@ -75,6 +75,7 @@ function App() {
         const errorMessage = error.message;
         const email = error.email;
         const credential = GithubAuthProvider.credentialFromError(error);
+        console.log(errorCode, errorMessage, email, credential);
       });
   };
   return (
